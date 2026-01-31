@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Quiz Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="start-screen" class="box">
+            <h1>Quiz</h1>
+            <p>10 Questions | 15 Seconds each</p>
+            <button class="main-btn" onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="box hidden">
+            <div class="header">
+                <span id="timer">Time: 15s</span>
+                <span id="score-label">Score: 0</span>
+            </div>
+            <h2 id="question-text">Question loading...</h2>
+            <div id="options-container"></div>
+        </div>
+
+        <div id="result-screen" class="box hidden">
+            <h1>Final Result</h1>
+            <p>Your Score is: <span id="final-score">0</span> / 10</p>
+            <button class="main-btn" onclick="location.reload()">Restart</button>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
